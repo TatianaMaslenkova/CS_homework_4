@@ -9,9 +9,15 @@
 // 1-й способ (если генерировать случайным образом): 
 
 Console.Clear();
-int[] array = new int[8];
+int[] array = CreateArray();
 FillArray(array);
 PrintArray(array);
+
+int[] CreateArray()
+{
+    int[] array = new int[8];
+    return array;
+}
 
 void FillArray(int[] array)
 {
